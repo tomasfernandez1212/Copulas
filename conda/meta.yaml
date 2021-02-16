@@ -15,7 +15,7 @@ build:
 
 requirements:
   host:
-    - matplotlib >=2.2.2,<3.2.2
+    - matplotlib >=2.2.2
     - numpy >=1.13.1,<2
     - pandas >=0.22.0,<1.1.5
     - pip
@@ -23,7 +23,7 @@ requirements:
     - scipy >=1.2,<2
     - pytest-runner
   run:
-    - matplotlib >=2.2.2,<3.2.2
+    - matplotlib >=2.2.2
     - numpy >=1.13.1,<2
     - pandas >=0.22.0,<1.1.5
     - python
