@@ -217,6 +217,9 @@ class Univariate(object):
             X (numpy.ndarray):
                 Values of the random variable. It must have shape (n, 1).
         """
+
+        X = X.dropna()
+
         if self.selection_sample_size and self.selection_sample_size < len(X):
             selection_sample = np.random.choice(X, size=self.selection_sample_size)
         else:

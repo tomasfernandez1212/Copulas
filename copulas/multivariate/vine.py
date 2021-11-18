@@ -177,7 +177,7 @@ class VineCopula(Multivariate):
         self.unis, self.ppfs = [], []
         for i, col in enumerate(X):
             uni = self.model()
-            uni.fit(X[col])
+            uni.fit(X[col].dropna())
             self.u_matrix[:, i] = uni.cumulative_distribution(X[col])
             self.unis.append(uni)
             self.ppfs.append(uni.percent_point)
