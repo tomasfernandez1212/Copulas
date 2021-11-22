@@ -114,3 +114,5 @@ ENV/
 
 # tutorials
 tutorials/mymodel.pkl
+
+.idea

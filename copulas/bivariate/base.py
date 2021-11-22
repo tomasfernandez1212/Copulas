@@ -173,6 +173,7 @@ class Bivariate(object):
         Return:
             None
         """
+        X = X[~np.isnan(X).any(axis=1),:]
         U, V = split_matrix(X)
         self.check_marginal(U)
         self.check_marginal(V)
